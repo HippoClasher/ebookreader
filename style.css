@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+p {
+  margin: 0 0 0 0;  
+  white-space: nowrap;
+  font-size: medium;
+}
+
+@media screen and (max-width: 800px) {
+  p {
+    font-size: small;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  p {
+    font-size: x-small;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  p {
+    font-size: xx-small;
+  }
+}
+
+.darkMode {
+color: white;
+}
+
+.languageSelector {
+  height: 48px;
+  width: 48px;  
+  z-index: 2;
+}
+
+.languageSelectorIcon {
+position: fixed;
+margin: 20px 0 0 0;
+right: 40px;
+height: 48px;
+width: 48px;
+}
+
+.icons {
+  height: 36px;
+  width: 36px;
+  margin: 0px 5px 0px 10px;
+  }
+
+span:not([class^="line"]) {
+margin: 0 0 0 20px;
+}
+
+[class^="site"] {
+margin: 0 0 0 0px;
+}
+
+.lines {
+float: left;
+margin: 0 15px 0 15px;
+opacity: 33%;
+user-select: none;
+-webkit-user-select: none;
+}
+  nav {
+  background: linear-gradient
+  (135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+  color: black;
+  position: fixed;
+  float: left;
+  bottom: 20px;
+  left: 20px;
+  padding: 15px;
+  font-weight: 600;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: solid 0.3px rgba(255, 255, 255, 0.1);
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 2;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+
+.nav {
+float: left;
+font-size: large;
+}
+
+nav p {
+padding-top: 5px;
+color: black;
+}
+
+nav p, img, input {
+  float: left;
+font-size: large;
+}
+
+.whiteModeLabel {
+margin-left: 5px;
+}
+
+#search {
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  border: 0.3px solid black;
+  border-radius: 20px;
+  color: black;
+  background-color: transparent;
+  min-width: 25px;
+  width: 25px;
+  height: 30px;
+  margin: 0 10px 0 10px;
+  background-image:url(img/Search\ Icon\ Dark\ Mode.png) ;
+  position: left;
+  padding-left: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left;
+  outline: none;
+  max-width:300px;
+  transition: width 0.5s;
+}
+
+#search:hover {
+  border-radius: 10px;
+  transition: 100ms ease-in;
+}
+
+#search:focus {
+  border-radius: 10px;
+  transition: 100ms ease-in;
+}
+
+.hide {
+  display: none;
+}
+
+.inputs {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: medium;
+  text-align: center;
+  background-color: transparent;
+  width: 16px;
+  height: 24px;
+  border-radius: 8px;
+  border: 1px solid #cde5ff;
+  color: #cde5ff;
+  }
+
+.pdfInputLabel ,
+.pdfInputLabel2 {
+user-select: none;
+-webkit-user-select: none;
+}
+
+.pdfInputLabel2 {
+display: none;
+}
+
+.skipInputLabel2 {
+float: left;
+text-align: center;
+display: none;
+margin-top: 4px;
+}
+
+.optionChapter {
+margin: 0 0 0 50px;
+display: none;
+}
+
+.inputPageOrChapter {
+display: inline;
+position: relative;
+margin: 0 0 0 35px;
+}
+
+.skipInputLabel {
+float: left;
+margin-top: 4px;
+}
+
+.pdfIcon {
+height: 44px;
+width: 44px;
+float: left;
+margin-top: 2px;
+}
+
+.dropDownIcon {
+  height: 20px;
+  width: 20px;
+  margin-left: 5px;
+  float: right;
+  position: absolute;
+}
+
+.skipIcon {
+height: 22px;
+width: 22px;
+float: left;
+margin: 3px 5px 0 15px;
+}
+
+.line {
+  border: none;
+  height: 1px;
+  background-color: #cde5ff;
+  margin: 10px 25px 10px 25px;
+}
+
+.pdfMaker,
+.skipToPageOrChapter {
+  margin: 10px 10px 0 10px;
+}
+
+[class^="match"] {
+  background-color: #cde5ff;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+.up, 
+.down {
+height: 24px;
+width: 24px;
+margin: 5px 2px 0 2px;
+}
+
+#skipTroughMatches {
+display: none;
+}
+
+.summariesTitle, [class^="summaryChapter"] {
+  position: fixed;
+  bottom: 60%;
+  left: 913px;
+  width: 400px;
+  height: 100px;
+  white-space: pre-wrap;
+  }
+
+  @media screen and (max-width: 1650px) {
+    .summariesTitle, [class^="summaryChapter"] {
+      left: calc(-10% + 1075px);
+      }
+  }
+
+  .summariesTitle {
+    bottom: 64%;
+    font-weight: 600;
+    font-size: larger;
+    }
+
+    @media screen and (max-width: 1330px) {
+      .summariesTitle, [class^="summaryChapter"] {
+        opacity: 0%;
+        transition: all 0.2s ease-out;
+        }
+    }
