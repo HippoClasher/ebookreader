@@ -20,9 +20,22 @@ positionEls.forEach((positionEl) => {
     }
 
     if (newPage !== lastContent.match(/(Page|Seite) (\d+)/)[2]) {
-      pageEl.scrollIntoView();
+    const elementY = pageEl.getBoundingClientRect().top + window.pageYOffset;
+    const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+    const middleY = screenHeight / 2;
+    
+    window.scrollTo({
+      top: elementY - middleY,
+    });
     } else if (newChapter !== lastContent.match(/(Chapter|Kapitel) (\d+)/)[2]) {
-      chapterEl.scrollIntoView();
+    const elementY = chapterEl.getBoundingClientRect().top + window.pageYOffset;
+    const screenHeight = window.innerHeight || document.documentElement.clientHeight;
+    const middleY = screenHeight / 2;
+    
+    window.scrollTo({
+      top: elementY - middleY,
+      behavior: 'smooth'
+    });
     }
 
     lastContent = newContent;
